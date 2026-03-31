@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RotaFácil - Guia completo para motoristas. Aprenda a usar o aplicativo de rastreamento de viagens.">
+    <title>RotaFácil — Guia do Motorista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">📍</span>
+                <span>RotaFácil</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#primeiros-passos" class="nav-link">Primeiros Passos</a></li>
+                <li><a href="#usando" class="nav-link">Como Usar</a></li>
+                <li><a href="#sincronizacao" class="nav-link">Sincronização</a></li>
+                <li><a href="#erros" class="nav-link">Erros</a></li>
+                <li><a href="#dicas" class="nav-link">Dicas</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Versão 1.4.0</div>
+            <h1>Guia do <span class="gradient-text">Motorista</span></h1>
+            <p class="hero-subtitle">Tudo que você precisa saber para usar o RotaFácil.<br>Registre rotas, distâncias e tempos de viagem automaticamente.</p>
+            <div class="hero-actions">
+                <a href="#primeiros-passos" class="btn btn-primary">Começar Agora</a>
+                <a href="#video-intro" class="btn btn-outline">
+                    <span class="btn-icon">▶</span> Ver Vídeo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <section class="section" id="video-intro">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🎬 Tutorial</span>
+                <h2>Veja como funciona</h2>
+                <p>Assista ao vídeo e aprenda a usar o RotaFácil em poucos minutos.</p>
+            </div>
+            <div class="video-wrapper">
+                <div class="video-placeholder">
+                    <span class="video-placeholder-icon">🎬</span>
+                    <p>Vídeo em breve...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primeiros Passos -->
+    <section class="section section-alt" id="primeiros-passos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🚀 Primeiros Passos</span>
+                <h2>Criando sua Conta</h2>
+                <p>Configure sua conta em poucos passos para começar a usar o app.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Abra o App</h3>
+                    <p>Abra o RotaFácil e toque em <strong>Criar Conta</strong>.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Preencha seus Dados</h3>
+                    <p>Informe nome, e-mail, CPF, selecione sua <strong>Transportadora</strong> e crie uma senha.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Verifique seu E-mail</h3>
+                    <p>Você receberá um link de confirmação. <strong>Clique no link</strong> para ativar sua conta.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Faça Login</h3>
+                    <p>Volte ao app, informe e-mail e senha e toque em <strong>Entrar</strong>.</p>
+                </div>
+            </div>
+            <div class="alert alert-warning">
+                <span class="alert-icon">⚠️</span>
+                <p><strong>Importante:</strong> Você só conseguirá fazer login <strong>após verificar seu e-mail</strong>!</p>
+            </div>
+
+            <!-- Sub-sections -->
+            <div class="subsection">
+                <h3>🔑 Esqueceu a Senha?</h3>
+                <ol class="instruction-list">
+                    <li>Na tela de login, toque em <strong>Esqueci minha senha</strong></li>
+                    <li>Digite seu e-mail cadastrado</li>
+                    <li>Toque em <strong>Enviar email de redefinição</strong></li>
+                    <li>Verifique sua caixa de entrada e clique no link</li>
+                    <li>Defina uma nova senha e faça login</li>
+                </ol>
+            </div>
+
+            <div class="subsection">
+                <h3>🔒 Alterar Senha</h3>
+                <ol class="instruction-list">
+                    <li>Na tela inicial, toque no ícone de <strong>cadeado 🔒</strong> no topo</li>
+                    <li>Digite sua senha atual</li>
+                    <li>Digite a nova senha (mínimo 6 caracteres, letras e números)</li>
+                    <li>Confirme a nova senha e toque em <strong>Alterar Senha</strong></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usando o App -->
+    <section class="section" id="usando">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🗺️ Usando o App</span>
+                <h2>Suas Viagens</h2>
+                <p>Aprenda a iniciar, acompanhar e finalizar suas viagens.</p>
+            </div>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">▶️</div>
+                    <h3>Iniciando uma Viagem</h3>
+                    <ol class="instruction-list">
+                        <li>Toque em <strong>Iniciar Viagem</strong></li>
+                        <li>Aguarde o GPS confirmar sua localização</li>
+                        <li>A viagem começa automaticamente</li>
+                    </ol>
+                    <p class="feature-detail">Você verá o mapa com sua posição, distância percorrida e tempo decorrido.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛣️</div>
+                    <h3>Durante a Viagem</h3>
+                    <ul class="check-list">
+                        <li>O app registra seu trajeto em <strong>segundo plano</strong></li>
+                        <li>Você pode <strong>minimizar o app</strong> normalmente</li>
+                        <li>Uma notificação indica que a viagem está ativa</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏁</div>
+                    <h3>Finalizando</h3>
+                    <ol class="instruction-list">
+                        <li>Toque em <strong>Finalizar Viagem</strong></li>
+                        <li>Confirme tocando em <strong>Sim</strong></li>
+                        <li>Pronto! Sua viagem foi salva</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Video placeholder -->
+            <div class="video-wrapper" style="margin-top: 3rem;">
+                <div class="video-placeholder">
+                    <span class="video-placeholder-icon">🎬</span>
+                    <p>Vídeo em breve...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sincronização -->
+    <section class="section section-alt" id="sincronizacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">☁️ Sincronização</span>
+                <h2>Sincronizando Viagens</h2>
+                <p>Após finalizar, a viagem precisa ser sincronizada com o servidor.</p>
+            </div>
+
+            <div class="sync-flow">
+                <div class="sync-step">
+                    <div class="sync-icon">📋</div>
+                    <h4>Veja suas viagens</h4>
+                    <p>Na tela inicial ou em <strong>Histórico</strong>, viagens com ícone de <strong>nuvem ☁️</strong> precisam sincronizar.</p>
+                </div>
+                <div class="sync-arrow">→</div>
+                <div class="sync-step">
+                    <div class="sync-icon">✏️</div>
+                    <h4>Informe o ID da Rota</h4>
+                    <p>Toque na viagem e digite o <strong>ID da Rota</strong> (número da operação).</p>
+                </div>
+                <div class="sync-arrow">→</div>
+                <div class="sync-step">
+                    <div class="sync-icon">✅</div>
+                    <h4>Confirme</h4>
+                    <p>Confira os dados e confirme a sincronização.</p>
+                </div>
+            </div>
+
+            <!-- ID da Rota -->
+            <div class="info-box">
+                <h3>🔍 O que é o ID da Rota?</h3>
+                <p>É o número que identifica sua rota no sistema. Você encontra no <strong>aplicativo do Mercado Livre</strong>:</p>
+                <ol class="instruction-list">
+                    <li>Abra o <strong>app do Mercado Livre</strong> (entregas)</li>
+                    <li>No canto inferior direito, toque em <strong>"Mais"</strong></li>
+                    <li>Selecione <strong>"Dados da minha rota"</strong></li>
+                    <li>O número da rota aparecerá (ex: <code>316719925</code>)</li>
+                    <li><strong>Anote</strong> esse número para usar no RotaFácil</li>
+                </ol>
+            </div>
+
+            <!-- Vídeo: Como encontrar o ID da Rota no Mercado Livre -->
+            <div class="video-wrapper" style="margin-top: 2rem;">
+                <!-- SUBSTITUA VIDEO_ID_ROTA pelo ID do vídeo sobre o ID da Rota -->
+                <iframe 
+                    src="https://www.youtube.com/embed/k__YC8rQy-s" 
+                    title="Como encontrar o ID da Rota no app do Mercado Livre"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Histórico -->
+            <div class="two-col" style="margin-top: 3rem;">
+                <div class="col-card">
+                    <h3>📱 Viagens Locais</h3>
+                    <p>Na tela inicial, veja suas <strong>últimas 15 viagens</strong> armazenadas no celular.</p>
+                    <div class="alert alert-warning" style="margin-top: 1rem;">
+                        <span class="alert-icon">⚠️</span>
+                        <p><strong>Limite de 15 viagens:</strong> Sincronize para liberar espaço.</p>
+                    </div>
+                </div>
+                <div class="col-card">
+                    <h3>☁️ Viagens Sincronizadas</h3>
+                    <p>Acesse <strong>Viagens Sincronizadas</strong> para ver todo o histórico na nuvem.</p>
+                    <ul class="check-list">
+                        <li>Carrega do servidor</li>
+                        <li>Scroll infinito</li>
+                        <li>Não ocupa espaço no celular</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagens de Erro -->
+    <section class="section" id="erros">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🔧 Solução de Problemas</span>
+                <h2>Mensagens de Erro</h2>
+                <p>Entenda o que cada mensagem significa e como resolver.</p>
+            </div>
+
+            <div class="error-cards">
+                <div class="error-card error-critical">
+                    <div class="error-header">
+                        <span class="error-badge">❌ Erro</span>
+                        <h3>"Verifique o ID da rota informado e tente novamente."</h3>
+                    </div>
+                    <div class="error-body">
+                        <p><strong>O que aconteceu:</strong> O ID da rota não foi encontrado no sistema ou não pertence a você.</p>
+                        <h4>O que fazer:</h4>
+                        <ol>
+                            <li><strong>NÃO sincronize</strong> a viagem com esse número</li>
+                            <li>Volte ao app do Mercado Livre e confira o número correto</li>
+                            <li>Tente sincronizar novamente com o número correto</li>
+                        </ol>
+                        <div class="error-note">A viagem <strong>NÃO foi sincronizada</strong>. Isso é proposital para você corrigir.</div>
+                    </div>
+                </div>
+
+                <div class="error-card error-critical">
+                    <div class="error-header">
+                        <span class="error-badge">❌ Erro</span>
+                        <h3>"Seu CPF não está cadastrado no sistema Box Logistics."</h3>
+                    </div>
+                    <div class="error-body">
+                        <p><strong>O que aconteceu:</strong> Seu CPF não foi encontrado no cadastro do sistema Box.</p>
+                        <h4>O que fazer:</h4>
+                        <ol>
+                            <li><strong>NÃO tente sincronizar</strong> novamente</li>
+                            <li>Entre em contato com o <strong>administrador da sua transportadora</strong></li>
+                            <li>Solicite que verifiquem seu cadastro no sistema Box</li>
+                            <li>Após regularização, tente sincronizar novamente</li>
+                        </ol>
+                        <div class="error-note">Aguarde o ajuste do seu cadastro.</div>
+                    </div>
+                </div>
+
+                <div class="error-card error-warning">
+                    <div class="error-header">
+                        <span class="error-badge warning">⚠️ Aviso</span>
+                        <h3>"Não foi possível enviar o KM automaticamente."</h3>
+                    </div>
+                    <div class="error-body">
+                        <p><strong>O que aconteceu:</strong> A viagem foi sincronizada, mas o KM não foi enviado automaticamente.</p>
+                        <h4>O que fazer:</h4>
+                        <ol>
+                            <li>A viagem <strong>já foi salva</strong> com sucesso</li>
+                            <li>Acesse o <strong>sistema Box</strong> manualmente</li>
+                            <li>Insira o KM da viagem no sistema</li>
+                        </ol>
+                        <div class="error-note success">Não precisa sincronizar novamente. Apenas insira o KM no Box.</div>
+                    </div>
+                </div>
+
+                <div class="error-card error-info">
+                    <div class="error-header">
+                        <span class="error-badge info">📶 Conexão</span>
+                        <h3>"Sem conexão com a internet"</h3>
+                    </div>
+                    <div class="error-body">
+                        <p><strong>O que aconteceu:</strong> Seu celular está sem internet.</p>
+                        <h4>O que fazer:</h4>
+                        <ol>
+                            <li>Verifique se o <strong>Wi-Fi</strong> ou <strong>dados móveis</strong> estão ligados</li>
+                            <li>Aguarde ter conexão estável</li>
+                            <li>Tente sincronizar novamente</li>
+                        </ol>
+                        <div class="error-note success">A viagem está salva no celular e <strong>não será perdida</strong>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dicas -->
+    <section class="section section-alt" id="dicas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💡 Dicas</span>
+                <h2>Dicas Importantes</h2>
+                <p>Siga essas dicas para ter a melhor experiência.</p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">📡</div>
+                    <h3>GPS Ligado</h3>
+                    <p>Mantenha o GPS <strong>sempre ligado</strong> durante toda a viagem para medições precisas.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📍</div>
+                    <h3>Permita Localização</h3>
+                    <p>Aceite o acesso à <strong>localização</strong> quando solicitado pelo app.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">☁️</div>
+                    <h3>Sincronize Diariamente</h3>
+                    <p>Sincronize suas viagens <strong>todos os dias</strong> para não acumular.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🔢</div>
+                    <h3>Confira o ID</h3>
+                    <p>Sempre <strong>confira o ID da Rota</strong> antes de sincronizar.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🔄</div>
+                    <h3>Mantenha Atualizado</h3>
+                    <p>Atualize o app para ter as <strong>últimas funcionalidades</strong> e correções.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">ℹ️</div>
+                    <h3>Versão do App</h3>
+                    <p>Toque no ícone de <strong>informações</strong> na tela inicial para ver a versão atual.</p>
+                </div>
+            </div>
+
+            <!-- Permissões -->
+            <div class="permissions-table">
+                <h3>📋 Permissões Necessárias</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permissão</th>
+                            <th>Para que serve</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Localização</strong></td>
+                            <td>Registrar o trajeto da viagem</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Localização em segundo plano</strong></td>
+                            <td>Continuar rastreando com app minimizado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Notificações</strong></td>
+                            <td>Mostrar aviso de viagem ativa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">📍</span>
+                    <span class="footer-name">RotaFácil</span>
+                    <span class="footer-version">v1.4.0</span>
+                </div>
+                <p class="footer-text">Desenvolvido por Guilherme André Rebello</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Fade-in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.step-card, .feature-card, .error-card, .tip-card, .sync-step, .col-card').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
