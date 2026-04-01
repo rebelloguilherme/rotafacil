@@ -15,8 +15,8 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-icon">📍</span>
+            <a href="#" class="nav-logo" style="display: flex; align-items: center; gap: 6px;">
+                <img src="logo.svg" alt="RotaFácil Logo" height="28">
                 <span>RotaFácil</span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -37,8 +37,7 @@
     <header class="hero" id="inicio">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <div class="hero-badge">Versão 1.4.0</div>
-            <h1>Guia do <span class="gradient-text">Motorista</span></h1>
+            <h1>Guia do Motorista</h1>
             <p class="hero-subtitle">Tudo que você precisa saber para usar o RotaFácil.<br>Registre rotas, distâncias e tempos de viagem automaticamente.</p>
             <div class="hero-actions">
                 <a href="#download" class="btn btn-primary">
@@ -61,7 +60,7 @@
                 <div class="download-icon">📱</div>
                 <div class="download-info">
                     <h3>RotaFácil para Android</h3>
-                    <p>Versão 1.4.0 · Requer Android 8.0 ou superior</p>
+                    <p>Requer Android 8.0 ou superior</p>
                 </div>
                 <a href="https://firebasestorage.googleapis.com/v0/b/tracking-app-1030a.firebasestorage.app/o/RotaFacil.apk?alt=media&token=f39f8e51-ebe7-4e70-9455-74addaf4200e" 
                    class="btn btn-download" 
@@ -109,16 +108,21 @@
                 </div>
                 <div class="step-card">
                     <div class="step-number">2</div>
-                    <h3>Preencha seus Dados</h3>
-                    <p>Informe nome, e-mail, CPF, selecione sua <strong>Transportadora</strong> e crie uma senha.</p>
+                    <h3>Seus Dados</h3>
+                    <p>Informe nome, e-mail, CPF e a <strong>Transportadora</strong>.</p>
+                </div>
+                <div class="step-card" style="border: 1.5px solid #1976D2;">
+                    <div class="step-number" style="background-color: #1976D2;">🔒</div>
+                    <h3>Insira o PIN</h3>
+                    <p>Digite o <strong>PIN de Segurança</strong> de 6 dígitos (solicite ao seu gestor).</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">3</div>
+                    <div class="step-number">4</div>
                     <h3>Verifique seu E-mail</h3>
                     <p>Você receberá um link de confirmação. <strong>Clique no link</strong> para ativar sua conta.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">4</div>
+                    <div class="step-number">5</div>
                     <h3>Faça Login</h3>
                     <p>Volte ao app, informe e-mail e senha e toque em <strong>Entrar</strong>.</p>
                 </div>
@@ -440,10 +444,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-icon">📍</span>
+                <div class="footer-brand" style="display: flex; align-items: center; gap: 6px;">
+                    <img src="logo.svg" alt="Logo RotaFácil" height="24" style="filter: grayscale(1) brightness(1.5);">
                     <span class="footer-name">RotaFácil</span>
-                    <span class="footer-version">v1.4.0</span>
                 </div>
                 <p class="footer-text">Desenvolvido por Guilherme André Rebello</p>
 
