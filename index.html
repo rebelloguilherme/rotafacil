@@ -24,6 +24,7 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#download" class="nav-link">Download</a></li>
+                <li><a href="#tutoriais" class="nav-link">Tutoriais</a></li>
                 <li><a href="#primeiros-passos" class="nav-link">Primeiros Passos</a></li>
                 <li><a href="#usando" class="nav-link">Como Usar</a></li>
                 <li><a href="#sincronizacao" class="nav-link">Sincronização</a></li>
@@ -43,7 +44,7 @@
                 <a href="#download" class="btn btn-primary">
                     <span class="btn-icon">⬇</span> Baixar o App
                 </a>
-                <a href="#video-intro" class="btn btn-outline">Ver Instruções</a>
+                <a href="#tutoriais" class="btn btn-outline">Ver Tutoriais</a>
             </div>
         </div>
     </header>
@@ -75,19 +76,64 @@
         </div>
     </section>
 
-    <!-- Video Section -->
-    <section class="section" id="video-intro">
+    <!-- Tutorials Section -->
+    <section class="section" id="tutoriais">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">🎬 Tutorial</span>
-                <h2>Veja como funciona</h2>
-                <p>Assista ao vídeo e aprenda a usar o RotaFácil em poucos minutos.</p>
+                <span class="section-badge">🎬 Tutoriais em Vídeo</span>
+                <h2>Aprenda Assistindo</h2>
+                <p>Veja os tutoriais e domine o RotaFácil em poucos minutos.</p>
             </div>
-            <div class="video-wrapper">
-                <div class="video-placeholder">
-                    <span class="video-placeholder-icon">🎬</span>
-                    <p>Vídeo em breve...</p>
+            <div class="tutorials-grid">
+
+                <!-- Tutorial 1: Baixar e Instalar -->
+                <div class="tutorial-card">
+                    <div class="tutorial-badge">1</div>
+                    <h3>📲 Baixar e Instalar o App</h3>
+                    <p>Veja o passo a passo para baixar e instalar o RotaFácil no seu celular Android.</p>
+                    <div class="tutorial-video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/UW8HsdDPsuY"
+                            title="Instruções para baixar e instalar o aplicativo RotaFácil"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
+
+                <!-- Tutorial 2: Criando uma Conta -->
+                <div class="tutorial-card">
+                    <div class="tutorial-badge">2</div>
+                    <h3>👤 Criando uma Conta</h3>
+                    <p>Aprenda a criar sua conta, inserir o PIN de segurança e verificar o e-mail.</p>
+                    <div class="tutorial-video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/oJjMZzjjQUo"
+                            title="Criando uma conta no RotaFácil"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Tutorial 3: Primeiro Acesso e Primeira Rota -->
+                <div class="tutorial-card">
+                    <div class="tutorial-badge">3</div>
+                    <h3>🗺️ Primeiro Acesso e Primeira Rota</h3>
+                    <p>Veja como fazer o primeiro login e registrar sua primeira viagem do início ao fim.</p>
+                    <div class="tutorial-video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/SZ59fn2D3E4"
+                            title="Primeiro acesso e primeira rota no RotaFácil"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -198,12 +244,8 @@
                 </div>
             </div>
 
-            <!-- Video placeholder -->
-            <div class="video-wrapper" style="margin-top: 3rem;">
-                <div class="video-placeholder">
-                    <span class="video-placeholder-icon">🎬</span>
-                    <p>Vídeo em breve...</p>
-                </div>
+            <div class="tutorial-cta" style="margin-top: 3rem; text-align: center;">
+                <a href="#tutoriais" class="btn btn-outline">🎬 Ver tutoriais em vídeo</a>
             </div>
         </div>
     </section>
