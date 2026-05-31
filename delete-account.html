@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Solicitação de Exclusão de Conta e Dados do aplicativo Rovix. Exclua sua conta e dados pessoais.">
+    <meta name="description"
+        content="Solicitação de Exclusão de Conta e Dados do aplicativo Rovix. Exclua sua conta e dados pessoais.">
     <title>Rovix — Exclusão de Conta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .form-container {
@@ -118,8 +120,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -145,7 +154,8 @@
         <div class="hero-bg"></div>
         <div class="hero-content" style="max-width: 800px;">
             <h1>Exclusão de Conta e Dados</h1>
-            <p class="hero-subtitle">Solicite a exclusão de sua conta de usuário do Rovix de forma segura e transparente.</p>
+            <p class="hero-subtitle">Solicite a exclusão de sua conta de usuário do Rovix de forma segura e
+                transparente.</p>
         </div>
     </header>
 
@@ -153,59 +163,74 @@
     <section class="section">
         <div class="container">
             <div class="privacy-content">
-                
+
                 <div class="privacy-block">
                     <h3>Como excluir sua conta no Aplicativo</h3>
-                    <p>Você pode solicitar a exclusão do seu cadastro e dados diretamente de forma rápida pelo próprio aplicativo do <strong>Rovix</strong>:</p>
+                    <p>Você pode solicitar a exclusão do seu cadastro e dados diretamente de forma rápida pelo próprio
+                        aplicativo do <strong>Rovix</strong>:</p>
                     <ol class="instruction-list" style="margin: 1.5rem 0; padding-left: 1.5rem;">
-                        <li style="margin-bottom: 0.75rem;">Abra o aplicativo <strong>Rovix</strong> no seu celular.</li>
-                        <li style="margin-bottom: 0.75rem;">Toque no símbolo de <strong>engrenagem ⚙️</strong> localizado no canto superior direito da tela inicial (ao lado direito do seu nome).</li>
+                        <li style="margin-bottom: 0.75rem;">Abra o aplicativo <strong>Rovix</strong> no seu celular.
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">Toque no símbolo de <strong>engrenagem ⚙️</strong>
+                            localizado no canto superior direito da tela inicial (ao lado direito do seu nome).</li>
                         <li style="margin-bottom: 0.75rem;">Selecione a opção <strong>"Excluir Conta"</strong>.</li>
-                        <li style="margin-bottom: 0.75rem;">Confirme a sua escolha na janela de diálogo que será exibida.</li>
+                        <li style="margin-bottom: 0.75rem;">Confirme a sua escolha na janela de diálogo que será
+                            exibida.</li>
                     </ol>
                 </div>
 
                 <div class="privacy-block">
                     <h3>Quais dados são excluídos ou mantidos?</h3>
                     <ul>
-                        <li style="margin-bottom: 0.5rem;"><strong>Cadastro Pessoal (Removido):</strong> Todas as suas credenciais de login, nome completo, e-mail e CPF cadastrados são permanentemente excluídos do nosso banco de dados ativo de autenticação (Google Firebase).</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Dados de Viagens (Mantidos):</strong> Os dados de viagens anteriores e trajetos integrados continuarão arquivados pela transportadora vinculada exclusivamente para fins de faturamento, logística corporativa e cumprimento de obrigações legais, conforme o Artigo 16 da LGPD. O seu cadastro pessoal de acesso, no entanto, é 100% excluído.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Cadastro Pessoal (Removido):</strong> Todas as suas
+                            credenciais de login, nome completo, e-mail e CPF cadastrados são permanentemente excluídos
+                            do nosso banco de dados ativo de autenticação (Google Firebase).</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Dados de Viagens (Mantidos):</strong> Os dados de
+                            viagens anteriores e trajetos integrados continuarão arquivados pela transportadora
+                            vinculada exclusivamente para fins de faturamento, logística corporativa e cumprimento de
+                            obrigações legais, conforme o Artigo 16 da LGPD. O seu cadastro pessoal de acesso, no
+                            entanto, é 100% excluído.</li>
                     </ul>
-                    <p style="margin-top: 1rem;">Caso você já tenha desinstalado o aplicativo e prefira solicitar a exclusão dos dados através da web, utilize o formulário alternativo de requisição abaixo:</p>
+                    <p style="margin-top: 1rem;">Caso você já tenha desinstalado o aplicativo e prefira solicitar a
+                        exclusão dos dados através da web, utilize o formulário alternativo de requisição abaixo:</p>
                 </div>
 
                 <!-- Interactive Form Container -->
                 <div class="form-container">
-                    
+
                     <!-- Deletion Form -->
-                    <form id="deleteAccountForm" onsubmit="handleSubmit(event)">
+                    <!-- Substitua 'seu-email@exemplo.com' pelo seu e-mail de destino para receber as solicitações -->
+                    <form id="deleteAccountForm" action="https://formsubmit.co/rovixmotorista@gmail.com" method="POST"
+                        onsubmit="handleSubmit(event)">
+                        <!-- Configurações do FormSubmit para redirecionamento e resposta visual -->
+                        <input type="hidden" name="_next"
+                            value="https://seu-usuario.github.io/nome-do-repositorio/delete-account.html?status=success">
+                        <input type="hidden" name="_subject" value="Solicitação de Exclusão de Conta - Rovix">
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="form-group">
                             <label for="fullName">Nome Completo</label>
-                            <input type="text" id="fullName" required placeholder="Digite seu nome completo">
+                            <input type="text" name="Nome" id="fullName" required
+                                placeholder="Digite seu nome completo">
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-mail Cadastrado</label>
-                            <input type="email" id="email" required placeholder="exemplo@email.com">
+                            <input type="email" name="Email" id="email" required placeholder="exemplo@email.com">
                         </div>
 
                         <div class="form-group">
                             <label for="cpf">CPF</label>
-                            <input type="text" id="cpf" required placeholder="000.000.000-00" oninput="maskCPF(this)">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="requestType">O que deseja excluir?</label>
-                            <select id="requestType" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font); font-size: 0.9375rem; color: var(--text); background: var(--bg); transition: var(--transition);">
-                                <option value="full">Excluir Conta Completa (e todos os dados pessoais associados)</option>
-                                <option value="data_only">Excluir Apenas Dados Específicos de Viagens (manter a conta ativa)</option>
-                            </select>
+                            <input type="text" name="CPF" id="cpf" required placeholder="000.000.000-00"
+                                oninput="maskCPF(this)">
                         </div>
 
                         <div class="checkbox-group">
-                            <input type="checkbox" id="confirmDelete" required>
+                            <input type="checkbox" name="Confirmacao" id="confirmDelete" required>
                             <label for="confirmDelete">
-                                Compreendo que a exclusão da conta é permanente e que os dados de viagens e histórico integrados às transportadoras continuarão arquivados por motivos legais e fiscais da transportadora em conformidade com a LGPD.
+                                Compreendo que a exclusão da conta é permanente e que os dados de viagens e histórico
+                                integrados às transportadoras continuarão arquivados por motivos legais e fiscais da
+                                transportadora em conformidade com a LGPD.
                             </label>
                         </div>
 
@@ -217,9 +242,14 @@
                     <!-- Success Card (hidden by default) -->
                     <div class="success-card" id="successCard">
                         <div class="success-icon">✓</div>
-                        <h3 style="color: var(--text); font-size: 1.5rem; margin-bottom: 1rem;">Solicitação Recebida!</h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Sua solicitação de exclusão de conta foi registrada. Iremos processar seu pedido e remover as informações de login do banco de dados ativo em até 7 dias úteis. Um e-mail de confirmação será enviado para o endereço informado.</p>
-                        <a href="index.html" class="btn btn-outline" style="display: inline-flex; width: auto;">Voltar para o Início</a>
+                        <h3 style="color: var(--text); font-size: 1.5rem; margin-bottom: 1rem;">Solicitação Recebida!
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Sua solicitação de exclusão de
+                            conta foi registrada. Iremos processar seu pedido e remover as informações de login do banco
+                            de dados ativo em até 7 dias úteis. Um e-mail de confirmação será enviado para o endereço
+                            informado.</p>
+                        <a href="index.html" class="btn btn-outline" style="display: inline-flex; width: auto;">Voltar
+                            para o Início</a>
                     </div>
 
                 </div>
@@ -246,35 +276,32 @@
         </div>
     </footer>
 
-    <script>
-        function maskCPF(input) {
-            let value = input.value.replace(/\D/g, "");
-            if (value.length > 11) value = value.slice(0, 11);
-            
-            value = value.replace(/(\d{3})(\d)/, "$1.$2");
-            value = value.replace(/(\d{3})(\d)/, "$1.$2");
-            value = value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-            
-            input.value = value;
-        }
+    // Checar se o FormSubmit redirecionou de volta com sucesso
+    window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('status') === 'success') {
+    document.getElementById('deleteAccountForm').style.display = 'none';
+    document.getElementById('successCard').style.display = 'block';
+    }
+    });
 
-        function handleSubmit(event) {
-            event.preventDefault();
-            const btnSubmit = document.getElementById('btnSubmit');
-            const form = document.getElementById('deleteAccountForm');
-            const successCard = document.getElementById('successCard');
+    function maskCPF(input) {
+    let value = input.value.replace(/\D/g, "");
+    if (value.length > 11) value = value.slice(0, 11);
 
-            // Disable button and change state
-            btnSubmit.disabled = true;
-            btnSubmit.innerText = "Processando solicitação...";
+    value = value.replace(/(\d{3})(\d)/, "$1.$2");
+    value = value.replace(/(\d{3})(\d)/, "$1.$2");
+    value = value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
 
-            // Simulate server request
-            setTimeout(() => {
-                form.style.display = 'none';
-                successCard.style.display = 'block';
-            }, 1200);
-        }
-    </script>
+    input.value = value;
+    }
+
+    function handleSubmit(event) {
+    const btnSubmit = document.getElementById('btnSubmit');
+    btnSubmit.disabled = true;
+    btnSubmit.innerText = "Enviando Solicitação...";
+    // Deixa o formulário prosseguir com o POST para o FormSubmit
+    }
 
 </body>
 
